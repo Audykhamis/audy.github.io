@@ -126,3 +126,16 @@ nav .menu{
   font-size: 30px;
   font-weight: 700;
 }
+.light nav{
+  background-color: rgb(115, 175, 228);
+}
+.tables{
+  margin-left: 25%;
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+}
