@@ -139,3 +139,50 @@ nav .menu{
   padding: 0 20px;
   text-align: center;
 }
+
+@media only screen and (max-width: 600px) {
+  nav .menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu .logo a {
+    font-size: 24px;
+  }
+
+  .menu ul {
+    margin-top: 10px;
+  }
+
+  .menu ul li {
+    margin-left: 0;
+    margin-bottom: 7px;
+  }
+
+  .menu ul li a {
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+
+  .img::before {
+    background: rgba(0, 0, 0, 0.6);
+  }
+
+  .center .title {
+    font-size: 30px;
+  }
+
+  .center .sub_title {
+    font-size: 20px;
+  }
+
+  .center .btns button {
+    height: 45px;
+    width: 140px;
+    font-size: 20px;
+  }
+
+  .tables {
+    margin-left: 10%;
+  }
+}
