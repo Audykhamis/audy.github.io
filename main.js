@@ -1,8 +1,18 @@
 console.log("hello");
- light = document.getElementById("light")
- body = document.getElementById("body")
+const savedLightMode = localStorage.getItem("lightMode");
 
-light.addEventListener("click", (eo) => {
+
+if (savedLightMode) {
+    document.getElementById("body").classList.toggle("light", savedLightMode === "true");
+}
+
+const light = document.getElementById("light");
+const body = document.getElementById("body");
+
+light.addEventListener("click", () => {
     
-    body.classList.toggle("light")
-})
+    body.classList.toggle("light");
+
+    const isLightMode = body.classList.contains("light");
+    localStorage.setItem("lightMode", isLightMode.toString());
+});
